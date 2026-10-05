@@ -1,0 +1,28 @@
+name: Bug report
+description: Something does not work as it should.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to reproduce it
+      placeholder: |
+        1. Open ...
+        2. Type ...
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: App version, or the commit you built.
+  - type: input
+    id: device
+    attributes:
+      label: Device and system
+      placeholder: Pixel 8, Android 17
