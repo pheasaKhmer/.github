@@ -1,0 +1,42 @@
+name: Wrong conversion
+description: The keyboard, web page, bot or engine wrote the wrong Khmer, or the wrong romanization.
+labels: ["spelling"]
+body:
+  - type: input
+    id: typed
+    attributes:
+      label: What you typed
+      placeholder: jam te tv vinh
+    validations:
+      required: true
+  - type: input
+    id: got
+    attributes:
+      label: What you got
+      placeholder: ចាំទេទៅវិញ
+    validations:
+      required: true
+  - type: input
+    id: expected
+    attributes:
+      label: What you expected
+      placeholder: ចាំតេទៅវិញ
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      options:
+        - Android keyboard
+        - Web page
+        - Telegram bot
+        - khmer-engine (Python)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: Other spellings people use for it, or what the words mean.
